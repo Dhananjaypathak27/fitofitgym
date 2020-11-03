@@ -1,0 +1,287 @@
+html,
+body {
+   height: 100%;
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   background: #f0f0f0;
+}
+
+.carousel-inner .carousel-item img {
+   width: 100%;
+   height: 500px;
+}
+
+/* loginSection */
+
+.loginSection {
+   background-image: url("../images/background.png");
+   /* background-color: #cccccc; Used if the image is unavailable */
+   /* height: 500px; You must set a specified height */
+   background-position: center; /* Center the image */
+   background-repeat: no-repeat; /* Do not repeat the image */
+   background-size: cover; /* Resize the background image to cover the entire container */
+   height: 150vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.signInContainer {
+   background: #b7b7b7;
+   margin-left: 400px;
+   min-height: 350px;
+   max-height: 100%;
+   border-radius: 3px;
+   /* width: 300px; */
+   opacity: 0.9;
+}
+
+.signInContainer h4 {
+   color: #000;
+   margin: 40px 0 20px 20px;
+}
+
+.signInContainer form {
+   display: flex;
+   flex-direction: column;
+}
+
+.signInContainer form input[type="text"],
+.signInContainer form input[type="email"],
+.signInContainer form input[type="password"] {
+   font-size: 14px;
+   margin: 10px 20px;
+   border-radius: 3px;
+   border: none;
+   padding: 8px;
+}
+.signInContainer form input[type="submit"] {
+   background-color: #d7385e;
+   border: none;
+   padding: 8px;
+   margin: 20px 20px;
+   color: #fff;
+   border-radius: 3px;
+   font-weight: 500;
+   font-size: 16px;
+}
+
+.signInContainer .signInFooterSection {
+   margin: 0 20px;
+   font-size: 14px;
+}
+
+.signInContainer .signInFooterSection p {
+   margin: 0px;
+}
+.signInContainer .signInFooterSection a {
+   color: #d7385e;
+   text-decoration: none;
+}
+
+/* signupSection */
+
+.signupSection {
+   background-image: url("../images/background.png");
+   /* background-color: #cccccc; Used if the image is unavailable */
+   /* height: 500px; You must set a specified height */
+   background-position: center; /* Center the image */
+   background-repeat: no-repeat; /* Do not repeat the image */
+   background-size: cover; /* Resize the background image to cover the entire container */
+   height: 150vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.signUpContainer {
+   background: #b7b7b7;
+   margin-left: 400px;
+   min-height: 350px;
+   max-height: 100%;
+   border-radius: 3px;
+   /* width: 300px; */
+   overflow-y: auto;
+   opacity: 0.9;
+}
+
+.signUpContainer h4 {
+   color: #000;
+   margin: 40px 0 20px 20px;
+}
+
+.signUpContainer form {
+   display: flex;
+   flex-direction: column;
+}
+
+.signUpContainer form input[type="text"],
+.signUpContainer form input[type="email"],
+.signUpContainer form input[type="password"],
+.signUpContainer form input[type="number"] {
+   font-size: 14px;
+   margin: 10px 20px;
+   border-radius: 3px;
+   border: none;
+   padding: 8px;
+}
+
+.signUpContainer form input[type="submit"] {
+   background-color: #d7385e;
+   border: none;
+   padding: 8px;
+   margin: 20px 20px;
+   color: #fff;
+   border-radius: 3px;
+   font-weight: 500;
+   font-size: 16px;
+}
+
+.signUpContainer .signUpFooterSection {
+   margin: 0 20px;
+   font-size: 14px;
+}
+
+.signUpContainer .signUPFooterSection p {
+   margin: 0px;
+}
+.signUpContainer .signUpFooterSection a {
+   color: #d7385e;
+   text-decoration: none;
+}
+
+/* aboutUsSection */
+
+.aboutUsSection .row {
+   text-align: center;
+   /* border: 1px solid rebeccapurple; */
+}
+
+.aboutUsSection .row .header h2 {
+   text-align: center;
+   color: #d7385e;
+   margin: 30px auto;
+}
+
+.aboutUsSection .row .col-md-8 .center {
+   text-align: center;
+}
+.aboutUsSection .row .img img {
+   width: 180px;
+}
+
+.aboutUsSection .imgTop img {
+   width: 15px;
+}
+/* footer */
+
+.footerContainer {
+   text-align: center;
+   background-color: #d7385e;
+   padding: 30px 0;
+}
+.footerContainer p {
+   font-size: 14px;
+   color: #fff;
+}
+
+/* contactUs */
+
+.contactUsContainer .row .contactUsHeader {
+   margin: 0;
+   text-align: center;
+   color: #d7385e;
+   margin: 50px auto;
+}
+
+.contactUsContainer .middleSection {
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   padding: 0 auto;
+   height: 50vh;
+   border: 1px solid red;
+}
+.formClass {
+   display: flex;
+   flex-direction: column;
+}
+
+.contactUsContainer .middleSection form input[type="text"],
+.contactUsContainer .middleSection form input[type="email"] {
+   font-size: 14px;
+   margin: 10px 20px;
+   border-radius: 3px;
+   border: none;
+   padding: 5px;
+   background-color: #e3e3e3;
+}
+
+.errorMessage {
+   color: #f00;
+   font-size: 14px;
+   margin: 10px 20px;
+   font-weight: 400;
+   text-align: center;
+}
+
+/* media Query */
+@media screen and (max-width: 1078px) {
+}
+
+@media screen and (max-width: 998px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 668px) {
+   .signInContainer {
+      background: #b7b7b7;
+      min-height: 350px;
+      max-height: 100%;
+      width: 300px;
+      /* opacity: 0.7; */
+      margin-left: 0px;
+   }
+
+   .signUpContainer {
+      background: #b7b7b7;
+      min-height: 350px;
+      max-height: 100%;
+      width: 300px;
+      /* opacity: 0.7; */
+      margin-left: 0px;
+   }
+   /* .hero {
+      height: 50px;
+   } */
+   .carousel-inner {
+      max-height: 400px;
+   }
+}
+
+@media screen and (max-width: 568px) {
+   /* .signInContainer {
+      background: #b7b7b7;
+      min-height: 350px;
+      max-height: 100%;
+      width: 300px;
+      opacity: 0.7;
+      margin-left: 0px;
+   } */
+}
+
+@media screen and (max-width: 320px) {
+   /* .signInContainer {
+      background: #b7b7b7;
+      min-height: 350px;
+      max-height: 100%;
+      width: 300px;
+      opacity: 0.7;
+      margin-left: 0px;
+   } */
+}
