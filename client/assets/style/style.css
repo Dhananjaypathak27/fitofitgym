@@ -14,6 +14,11 @@ body {
    height: 500px;
 }
 
+.red {
+   background-color: #d7385e;
+   color: #fff;
+}
+
 /* loginSection */
 
 .loginSection {
@@ -226,6 +231,87 @@ body {
    margin: 10px 20px;
    font-weight: 400;
    text-align: center;
+}
+
+/* home page starts here */
+.home {
+   width: 100%;
+   padding: 0 20px;
+}
+.home .center {
+   display: flex;
+   justify-content: center;
+   padding-top: 50px;
+   margin-bottom: 50px;
+}
+
+.home .end {
+   text-align: right;
+   padding-right: 20px;
+}
+
+.home .smallBox {
+   text-align: center;
+   background-color: #fff;
+   padding: 30px;
+   border-radius: 10px;
+   margin: 10px 0;
+}
+.home .smallBox .changeTiming,
+.home .smallBox .upgradePackage,
+.home .smallBox .feePayment {
+   padding: 8px 10px;
+   font-size: 14px;
+   border-radius: 5px;
+}
+
+.home .bigBox {
+   margin-top: 30px;
+   background-color: #fff;
+   padding: 10px 0;
+   border-radius: 10px;
+}
+
+.home .bigBox h3 {
+   margin: 0;
+   padding: 20px 0;
+   text-decoration: underline;
+}
+
+.home .bigBox .beginner {
+   color: #d7385e;
+}
+
+.home .bigBox .excersiseName {
+   text-decoration: underline;
+   font-size: 20px;
+   font-weight: 600;
+}
+
+/* plan page starts here */
+.plan {
+   padding: 20px;
+}
+
+.plan h2 {
+   color: #d7385e;
+   margin: 20px 0;
+   text-align: center;
+   text-decoration: underline;
+}
+
+.plan .smallBox {
+   background-color: #fff;
+   padding: 30px;
+   border-radius: 10px;
+   margin: 10px 0;
+   height: 200px;
+}
+
+.plan .smallBox h4 {
+   text-align: center;
+   color: #d7385e;
+   text-decoration: underline;
 }
 
 /* media Query */

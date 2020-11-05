@@ -13,11 +13,11 @@
         $password = FormSanitizer::sanitizeFormEmail($_POST["password"]);
         $password2 = FormSanitizer::sanitizeFormEmail($_POST["password2"]);
 
-        $success = $account->register($firstName,$lastName,$email,$email2,$phoneNumber,
-                            $password,$password2);
+        $success = $account->register($firstName,$lastName,$email,$email2,$phoneNumber,$password,$password2);
 
         if($success){
             //we can store session here so that user does not have to login again after registering
+            
             header("Location: register.php");
         }
     }

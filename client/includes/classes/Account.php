@@ -17,7 +17,12 @@ class Account{
         $this->validatePasswords($pw,$pw2);
 
         if(empty($this->errorArray)){
-            return $this->insertUserDetails($fn,$ln,$em,$phno,$pw);
+            $isTure = $this->insertUserDetails($fn,$ln,$em,$phno,$pw);
+            if($isTure){
+                $this->insertIntoUserProfile($em);
+            }
+
+            return $isTure;
         }
 
         return false;
@@ -57,6 +62,22 @@ class Account{
 
         return $query->execute();
 
+    }
+
+    private function insertIntoUserProfile($em){
+        $query = $this->con->prepare("SELECT userId FROM tbluserreg WHERE email=:em");
+        
+        $query->bindValue(":em",$em);
+        $query->execute();
+
+        $row = $query->fetch(PDO::FETCH_ASSOC);
+        $userId = $row["userId"];
+        
+        $query = $this->con->prepare("INSERT INTO tbluserprofile 
+                                    (userId) VALUES (:userId)");
+
+        $query->bindValue(":userId",$userId);
+        $query->execute(); 
     }
 
     private function validateFirstName($fn){

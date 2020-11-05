@@ -1,10 +1,7 @@
 <?php
-    include_once("includes/config.php");
-    // session_start();
-    if(isset($_SESSION["userLoggedIn"])){
-        header("location:home.php");
-    }
-    else{
-        header("location:register.php"); 
-    }
+    include_once("includes/header.php");
+
+    $userProvider = new UserProvider($con,$_SESSION["userLoggedIn"]);
+    echo $userProvider->getHomeSection();
+
 ?>
